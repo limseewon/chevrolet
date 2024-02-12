@@ -3,80 +3,89 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Arial', sans-serif;
 }
 
-header {
-  width: 1920px;
-  height: 53px;
-  background-color: #d9d9d9;
-  color: #fff;
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.container {
-  width: 1488px;
+header {
+  background-color: #d9d9d9;
   height: 53px;
-  margin: 0 auto;
-  justify-content: space-between
+  border-bottom: 1px solid #ddd;
 }
 
 .menu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
 
-.left-menu {
+.left-menu, .right-menu {
   display: flex;
   align-items: center;
 }
-
-.right-menu {
-  display: flex;
-  align-items: center;
+.left-menu{
+  padding-left: 108px;
+}
+.right-menu{
   padding-left: 216px;
+  padding-right: 108px;
 }
 
-.menu a {
-  color: rgba(0, 0, 0, 0.65);
+.left-menu a, .right-menu a {
   text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #333;
+  padding: 0 20px;
 }
 
 .logo img {
+  /* max-height: 100%; */
   width: 100px;
   height: 47px;
 }
 
 .main-contents {
-  width: 1920px;
-  height: 898px;
-  margin: 0 auto; /* 상하 여백 조절 */
+  position: relative;
 }
 
 .main-contents img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  height: 873px;
+  display: block;
+  object-fit: cover;
+}
+h1{
+  font-size: 60px;
+  position: absolute;
+}
+.slidewrapper{
+  width: 100%;
+  height: 945px;
+  margin: 0 auto;
   position: relative;
 }
-.arrow {
+.btn{
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 30px solid #fff; 
+  margin-top: -25px;
+  background: #000;
 }
+.prev{
+  left: 42px;
+}
+.next{
+  right: 42px;
+}
+
