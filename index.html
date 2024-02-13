@@ -5,44 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHEVROLET</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
+<!-- header -->
   <header>
-    <div class="container">
-      <div class="menu">
-          <div class="left-menu">
-              <a href="#">차량</a>
-              <a href="#">온라인 구매</a>
-              <a href="#">정비 서비스</a>
-              <a href="#">쉐보레 NOW</a>
-          </div>
-          <div class="logo">
-            <a href="#">
-            <img src="img/LOGO-removebg-preview.png"  alt="Chevrolet 로고">
-            </a>
-          </div>
-          <div class="right-menu">
-              <a href="#">통합검색</a>
-              <a href="#">로그인</a>
-          </div>
-      </div>
-    </div>
+    <h1 class="logo">
+      <a href="#">
+      <img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고">
+      </a>
+    </h1>
+    <ul class="left-menu">
+      <li><a href="#">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
+        <ul>
+              <!-- <li><a href="">여기다가 차량 소개</a></li> -->
+        </ul>
+      </li>
+      <li><a href="#">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+      <li><a href="#">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+      <li><a href="#">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+    </ul>
+
+    <ul class="right-menu">
+      <li><a href="#">통합검색<span class="material-symbols-outlined">search</span></a></li>
+      <li><a href="#">로그인<span class="material-symbols-outlined">person</span></a></li>
+    </ul>    
   </header>
 
-  <div class="main-contents">
-    <img src="img/trailblazer-mast-l-xl.jpg" alt="Main_Contents_Image">
-        <div class="slide_wrapper">
-          <h1>trailblazer</h1>
-          <p>
-            <a href=""class="btn prev">prev</a>
-            <a href=""class="btn next">next</a>
-          </p>
-        </div>
-  </div>
-  <div class="section1">
-    
-  </div>
+<!-- main -->
+  <main>
+    <div class="container">
+      <div class="slide_wrapper">
+        <ul class="slides animated">
+          <li><h2>ttttt</h2><img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저">slide 01</li>
+          <li><img src="./imges/trax_crossover.jpg" alt="크로스오버">slide 02</li>
+          <li><img src="./imges/equinox.jpg" alt="이퀴녹스">slide 03</li>
+          <li><img src="./imges/tahoe.jpg" alt="타호">slide 04</li>
+          <li><img src="./imges/traverse.jpg" alt="트레버스">slide 05</li>
+          <li><img src="./imges/colorado-01.jpg" alt="콜로라도">slide 06</li>
+        </ul>
+        <p class="controls">
+          <span class="material-symbols-outlined prev">arrow_back_ios<span>				
+          <span class="material-symbols-outlined next"> arrow_forward_ios</span>
+        </p>
+      </div>	
+    </div>
+  </main>
+
+<!-- footer -->
+  <footer></footer>
+
 
   <script src="/script.js"></script>
 </body>
