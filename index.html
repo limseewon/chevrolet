@@ -14,44 +14,65 @@
 <body>
 <!-- header -->
   <header>
-    <h1 class="logo">
-      <a href="#">
-      <img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고">
-      </a>
-    </h1>
-    <ul class="left-menu">
-      <li><a href="#">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
-        <ul>
-              <!-- <li><a href="">여기다가 차량 소개</a></li> -->
-        </ul>
-      </li>
-      <li><a href="#">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-      <li><a href="#">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-      <li><a href="#">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-    </ul>
-
-    <ul class="right-menu">
-      <li><a href="#">통합검색<span class="material-symbols-outlined">search</span></a></li>
-      <li><a href="#">로그인<span class="material-symbols-outlined">person</span></a></li>
-    </ul>    
+    <div  class="container">
+      <ul class="left-menu">
+        <li><a href="#">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
+          <ul>
+                <!-- <li><a href="">여기다가 차량 소개</a></li> -->
+          </ul>
+        </li>
+        <li><a href="#">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+        <li><a href="#">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+        <li><a href="#">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+      </ul>
+      <h1 class="logo"><a href="#"><img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고"></a>
+      </h1>
+      <ul class="right-menu">
+        <li><a href="#">통합검색<span class="material-symbols-outlined">search</span></a></li>
+        <li><a href="#">로그인<span class="material-symbols-outlined">person</span></a></li>
+      </ul>    
+    </div>  
   </header>
 
 <!-- main -->
   <main>
     <div class="container">
-      <div class="slide_wrapper">
-        <ul class="slides animated">
-          <li><h2>ttttt</h2><img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저">slide 01</li>
-          <li><img src="./imges/trax_crossover.jpg" alt="크로스오버">slide 02</li>
-          <li><img src="./imges/equinox.jpg" alt="이퀴녹스">slide 03</li>
-          <li><img src="./imges/tahoe.jpg" alt="타호">slide 04</li>
-          <li><img src="./imges/traverse.jpg" alt="트레버스">slide 05</li>
-          <li><img src="./imges/colorado-01.jpg" alt="콜로라도">slide 06</li>
+      <div class="slide-wrapper">
+        <ul class="slide-container">
+          <li class="slide1">
+            <h2>TRAIL BLAZZER</h2>
+            <!-- <img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저"> -->
+            slide 01
+          </li>
+          <li class="slide2">
+            <h2>TRAX CROSSOVER</h2>
+            <a href="">자세히 보기</a>
+            <!-- <img src="./imges/trax_crossover.jpg" alt="크로스오버">slide 02 -->
+          </li>
+          <li class="slide3">
+            <h2>EQUINOX</h2>
+            <a href="">자세히 보기</a>
+            <!-- <img src="./imges/equinox.jpg" alt="이퀴녹스">slide 03 -->
+          </li>
+          <li class="slide4">
+            <h2>TAHOE</h2>
+            <a href="">자세히 보기</a>
+            <!-- <img src="./imges/tahoe.jpg" alt="타호">slide 04 -->
+          </li>
+          <li class="slide5">
+            <h2>TRAVERSE</h2>
+            <a href="">자세히 보기</a>
+            <!-- <img src="./imges/traverse.jpg" alt="트레버스">slide 05 -->
+          </li>
+          <li class="slide6">
+            <h2>COLORADO</h2>
+            <a href="">자세히 보기</a>
+            <!-- <img src="./imges/colorado-01.jpg" alt="콜로라도">slide 06 -->
+          </li>
         </ul>
-        <p class="controls">
-          <span class="material-symbols-outlined prev">arrow_back_ios<span>				
-          <span class="material-symbols-outlined next"> arrow_forward_ios</span>
-        </p>
+          <a href="#" id="prev" class="controls"><i class ="material-symbols-outlined prev">arrow_back_ios</i></a>			
+          <a href="#" id="next" class="controls"><i class ="material-symbols-outlined prev">arrow_forward_ios</i></a>		
+          <p class="pager"></p>	
       </div>	
     </div>
   </main>
