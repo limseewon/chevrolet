@@ -14,71 +14,228 @@
 <body>
 <!-- header -->
   <header>
-    <div  class="container">
+    <div  class="gnb">
       <ul class="left-menu">
-        <li><a href="#">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
-          <ul>
-                <!-- <li><a href="">여기다가 차량 소개</a></li> -->
+        <li><a href="#" title="차량">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
+          <ul class="depth">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </li>
-        <li><a href="#">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-        <li><a href="#">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-        <li><a href="#">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+        <li><a href="#" title="온라인 구매">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+        <li><a href="#" title="정비 서비스">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+        <li><a href="#" title="쉐보레 NOW">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
       </ul>
-      <h1 class="logo"><a href="#"><img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고"></a>
+      <h1 class="logo"><a href="#" title="쉐보레 로고 이미지"><img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고"></a>
       </h1>
       <ul class="right-menu">
-        <li><a href="#">통합검색<span class="material-symbols-outlined">search</span></a></li>
-        <li><a href="#">로그인<span class="material-symbols-outlined">person</span></a></li>
+        <li><a href="#" title="통합검색">통합검색<span class="material-symbols-outlined">search</span></a></li>
+        <li><a href="#" title="로그인">로그인<span class="material-symbols-outlined">person</span></a></li>
       </ul>    
     </div>  
   </header>
 
 <!-- main -->
   <main>
-    <div class="container">
-      <div class="slide-wrapper">
-        <ul class="slide-container">
-          <li class="slide1">
+    <section id="cars">
+      <div class="swiper cars">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <h2>TRAIL BLAZZER</h2>
-            <!-- <img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저"> -->
-            slide 01
-          </li>
-          <li class="slide2">
+            <img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
             <h2>TRAX CROSSOVER</h2>
-            <a href="">자세히 보기</a>
-            <!-- <img src="./imges/trax_crossover.jpg" alt="크로스오버">slide 02 -->
-          </li>
-          <li class="slide3">
+            <img src="./imges/trax_crossover.jpg" alt="트렉스 크로스오버">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
             <h2>EQUINOX</h2>
-            <a href="">자세히 보기</a>
-            <!-- <img src="./imges/equinox.jpg" alt="이퀴녹스">slide 03 -->
-          </li>
-          <li class="slide4">
+            <img src="./imges/equinox.jpg" alt="이퀴녹스">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
             <h2>TAHOE</h2>
-            <a href="">자세히 보기</a>
-            <!-- <img src="./imges/tahoe.jpg" alt="타호">slide 04 -->
-          </li>
-          <li class="slide5">
+            <img src="./imges/tahoe.jpg" alt="타호">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
             <h2>TRAVERSE</h2>
-            <a href="">자세히 보기</a>
-            <!-- <img src="./imges/traverse.jpg" alt="트레버스">slide 05 -->
-          </li>
-          <li class="slide6">
+            <img src="./imges/traverse.jpg" alt="트레비스">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
             <h2>COLORADO</h2>
-            <a href="">자세히 보기</a>
-            <!-- <img src="./imges/colorado-01.jpg" alt="콜로라도">slide 06 -->
+            <img src="./imges/colorado-01.jpg" alt="콜로라도">
+            <input type="button" value="견적내기" class="btn b_btn">
+          </div>
+        </div>
+        <!-- 콘트롤 버튼 -->
+        <div class="swiper-pagination2"></div>
+        <!-- 좌, 우버튼 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section id="Convenience">
+      <h2>편의기능</h2>
+      <article class="c_banner">
+        <ul>
+          <li>
+            <a href="#" title="배너1">
+              <img src="./imges/testdrive-apply--removebg-preview.png" alt="시승신청">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="배너1">
+              <img src="./imges/car-made-removebg-preview.png" alt="내 차 만들기">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="배너1">
+              <img src="./imges/price-removebg-preview.png" alt="카탈로그/가격표">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="배너1">
+              <img src="./imges/event-removebg-preview.png" alt="이벤트">
+            </a>
           </li>
         </ul>
-          <a href="#" id="prev" class="controls"><i class ="material-symbols-outlined prev">arrow_back_ios</i></a>			
-          <a href="#" id="next" class="controls"><i class ="material-symbols-outlined prev">arrow_forward_ios</i></a>		
-          <p class="pager"></p>	
-      </div>	
-    </div>
+      </article>
+    </section>
+    
+    <section id="best seller">
+      <h2>BEST Seller</h2>
+      <div class="swiper best">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span class="rank">1위</span>
+            <h3 class="top3_title">TREX CROSSOVER</h3>
+            <img src="./imges/traxcrossover_side-removebg-preview.png" alt="트렉스 크로스오버 옆면">
+            <ul class="detail">
+              <li>선택품목<br> LS Plus</li>
+              <li><em class="price">21,880,000</em>원~</li>
+            </ul>
+            <input type="button" value="견적내기;" class="btn b_btn">
+            <input type="button" value="자세히 보기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
+            <span class="rank">2위</span>
+            <h3 class="top3_title">TRAIL BLAZZER</h3>
+            <img src="./imges/trailblazer_side-removebg-preview.png" alt="트레일블레이저 옆면">
+            <ul class="detail">
+              <li>선택품목<br> LT</li>
+              <li><em class="price">26,990,000</em>원~</li>
+            </ul>
+            <input type="button" value="견적내기;" class="btn b_btn">
+            <input type="button" value="자세히 보기" class="btn b_btn">
+          </div>
+          <div class="swiper-slide">
+            <span class="rank">3위</span>
+            <h3 class="top3_title">TRAVERSE</h3>
+            <img src="./imges/traverse_side-removebg-preview.png" alt="트레비스 옆면">
+            <ul class="detail">
+              <li>선택품목<br> LT Leather Premium</li>
+              <li><em class="price">56,400,000</em>원~</li>
+            </ul>
+            <input type="button" value="견적내기;" class="btn b_btn">
+            <input type="button" value="자세히 보기" class="btn b_btn">
+          </div>
+        </div>
+        <!-- 콘트롤 버튼 -->
+        <div class="swiper-pagination2"></div>
+        <!-- 좌, 우버튼 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+      
+    <section id="event">
+      <h2>이벤트</h2>
+      <br>
+      <article class="event_support">
+        <!--이미지 호버 물어보기-->
+        <h3>
+          "면세구입자"
+          <br>
+          "지원 프로그램"
+        </h3>
+        <p class="support_p"> 면세 구입자 지원<br></p>
+        <hr>
+        <ul>
+          <li>이벤트 기간:2024-02-01 ~ 2024-02-29</li>
+        </ul>
+      </article>
+      <article class="event_program">
+        <h3>
+          "쉐보레"
+          <br>
+          "익스체인지 프로그램"
+        </h3>
+        <p class="program_p"> 쉐보레 익스체인지 프로그램<br></p>
+        <hr>
+        <ul>
+          <li>이벤트 기간:2024-02-01 ~ 2024-02-29</li>
+        </ul>
+      </article>
+      <article class="event_account">
+        <h3>
+          "한국지엠"
+          <br>
+          "통합 계정 전환"
+        </h3>
+        <p class="program_p"> 통합 계정 전환<br></p>
+        <hr>
+      </article>
+    </section>
   </main>
 
 <!-- footer -->
-  <footer></footer>
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./imges/chevrolet-logo-v2-removebg-preview.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="차량">차량</a></li>
+          <li><a href="#" title="온라인 구매">온라인 구매</a></li>
+          <li><a href="#" title="정비 서비스">정비 서비스</a></li>
+          <li><a href="#" title="쉐보레 NOW">쉐보레 NOW</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
+          <li><a href="#" title="사이트맵">사이트맵</a></li>
+          <li><a href="#" title="GM KOREA">GM KOREA</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt>사업자 :</dt>
+          <dd>한국지엠주식회사</dd>
+          <dt>대표 : </dt>
+          <dd>헥터 비자레알</dd>
+          <dt>사업자등록번호 : </dt>
+          <dd>122-81-74534</dd>
+          <dt>주소 : </dt>
+          <dd>21334 인천광역시 부평구 부평대로 233</dd>
+          <dt>통신판매업신고 : </dt>
+          <dd>2016-인천부평-0902</dd>
+        </dl>
+        <p>&copy; GM KOREA.ALL RIGHTS RESERVED</p>
+      </address>
+    </div>
+  </footer>
 
 
   <script src="/script.js"></script>
