@@ -3,16 +3,17 @@
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
 }
+
 header{
-  width: 100%;
-  max-width: 1920px;
-  height: 53px;
-  width: 100%;
+  width: 1920px;
   height: 53px;
   position: fixed;
   background: #ebebeb;
+  z-index: 1;
+  border-bottom: 1px solid #ebebeb;
 }
 
 header .gnb {
@@ -28,6 +29,11 @@ header ul{
   line-height: 53px;
 }
 
+.depth{
+  display: none;
+  /* display: flex;
+  height: 100%; */
+}
 
 .left-menu{
   padding-left: 108px;
@@ -38,7 +44,8 @@ header ul{
   width: 100px;
   height: 47px;
   margin-right: 108px;
-  display: block;
+  align-items: center;
+  display: flex;
 }
 
 .right-menu{
@@ -47,24 +54,28 @@ header ul{
 }
 
 /* 메인 서식 */
-.swiper-cars {
-  margin-left: auto;
-  margin-right: auto;
+.c-cars{
+  width: 1920px;
+  height: 900px;
   overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-}
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
-  transition: left .3s ease-in;
 }
 
-.swiper-wrapper >.swiper-slide{
-  
+.c-wrapper{
+  display: flex;
+  position: absolute;
+}
+
+.c-wrapper>li{
+  width: 100%;
+  position: absolute;
+}
+.c-wrapper>li>img{
+  width: 1920px;
+  height: 900px;
+}
+
+/* id="Convenience */
+.c_banner{
+  width: 1920px;
+  height: 460px;
 }
