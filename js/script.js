@@ -1,4 +1,4 @@
-let slideWrapper = document.querySelector('#cars'),  //ul의 부모
+let slideWrapper = document.querySelector('.cars'),  //ul의 부모
     slideContainer = slideWrapper.querySelector('.c-wrapper'),  //ul
     slides = slideContainer.querySelectorAll('li'), //각 슬라이드
     slideCount = slides.length,//슬라이드 개수
