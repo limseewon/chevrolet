@@ -332,8 +332,39 @@ header ul{
   transition: transform 0.5s ease-in-out;
   display: flex;
 }
-
-
+button {
+  font-size: 2em;
+  background: #fff;
+  color: #000;
+  border: 3px solid #cd9834;
+  padding: 7px 2px;
+  margin: 16px;
+  position: relative;
+  overflow: hidden; 
+  z-index:1;
+}
+button:after{
+  content:'';
+  position: absolute;
+  background: #cd9834;
+  padding:5px;
+  z-index:-1;
+  left: -1px; 
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  transition:0.3s;
+}
+button:hover{
+  color: #000;
+}
+button.grow_box:after{
+  transform:scale(0);
+}
+button.grow_box:hover:after{
+  /* transform:scale(1); */
+  transform:none;
+}
 /*footer*/
 footer{
   height: 300px;
