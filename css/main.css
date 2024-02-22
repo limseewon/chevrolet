@@ -299,6 +299,13 @@ header ul{
 .pager a.active {
   background: #000;
 }
+button.grow_ellipse:after{
+  border-radius: 50%;
+  transform:scale(0);
+}
+button.grow_ellipse:hover:after{
+  transform:scale(1.5);
+}
 
 /* Convenience 서식 */
 .Convenience{
@@ -316,19 +323,69 @@ header ul{
 }
 .container .menu li{
   text-align: center;
-  /* padding: 4px;
-  padding-top: 81px; */
+}
+.container .menu li a{
+  font-size: 22px;
+  font-weight: medium;
+}
+.container .menu li a img{
+  margin-bottom: 40px;
 }
 
 /* best-seller */
-.best{
+.best-seller {
   position: relative;
-  width: 1420px;
+  width: 100%;
   overflow: hidden;
-  height: 640px;
+  height: 600px;
   transition: transform 0.5s ease-in-out;
+}
+
+.best {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  transition: left .3s ease-in;
+  left: 0;
+}
+
+.slide-wrapper>img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.slide-wrapper{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+
+.slide-wrapper .slide{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
   display: flex;
 }
+
+.slide-wrapper .slide>*{
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s 0.4s ease-in-out;
+}
+
+.slide-wrapper.active .slide>*{
+  color: #fff;
+  opacity: 1;
+}
+
 button {
   font-size: 2em;
   background: #fff;
@@ -362,6 +419,36 @@ button.grow_box:hover:after{
   /* transform:scale(1); */
   transform:none;
 }
+/* model overview */
+
+
+
+/* completecare */
+.care{
+  padding-top: 162px;
+  padding-bottom: 162px;
+}
+.complete{
+  width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.c-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 텍스트를 중앙 정렬합니다. */
+}
+
+.c-text h2,
+.c-text2 h3 {
+  margin: 0; /* 기본 마진을 제거합니다. */
+}
+
+
+
+
 /*footer*/
 footer{
   height: 300px;
