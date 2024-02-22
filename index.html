@@ -1,369 +1,459 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHEVROLET</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+@charset 'utf-8';
+@import url(reset.css);
 
-</head>
-<body>
-<!-- header -->
-  <header>
-    <div  class="gnb container">
-      <ul class="left-menu">
-        <li><a href="#" title="차량">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
-          <ul class="depth">
-            <li><a href="#"><img src="./imges/colorado_angularfront-removebg-preview.png" alt="콜로라도 뎁스">COLORADO</a></li>
-            <li><a href="#"> <img src="./imges/equinox_angularfront-removebg-preview.png" alt="이퀴녹스 뎁스">EQUINOX</a></li>
-            <li><a href="#"><img src="./imges/tahoe_angularfront-removebg-preview.png" alt="타호 뎁스">TAHOE</a></li>
-            <li><a href="#"><img src="./imges/blazer_angularfront-removebg-preview.png" alt="트레일블레이저 뎁스">TRAIL-BLAZER</a></li>
-            <li><a href="#"><img src="./imges/traverse_angularfront-removebg-preview.png" alt="트레비스 뎁스">TRAVERSE</a></li>
-            <li><a href="#"><img src="./imges/trax_angularfront-removebg-preview.png" alt="트렉스 크로스오버 뎁스">TRAX-CROSSOVER</a></li>
-          </ul>
-        </li>
-        <li><a href="#" title="온라인 구매">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-          <ul class="depth">
-            <li><a href="#">온라인샵</a></li>
-            <li><a href="#">가격 및 구매 안내</a></li>
-            <li><a href="#">전시장 안내</a></li>
-            <li><a href="#">온라인 신청</a></li>
-          </ul>
-        <li><a href="#" title="정비 서비스">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-        <li><a href="#" title="쉐보레 NOW">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-      </ul>
-      <h2 class="logo"><a href="#" title="쉐보레 로고 이미지"><img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고"></a>
-      </h2>
-      <ul class="right-menu">
-        <li><a href="#" title="통합검색">통합검색<span class="material-symbols-outlined">search</span></a></li>
-        <li><a href="#" title="로그인">로그인<span class="material-symbols-outlined">person</span></a></li>
-      </ul>    
-    </div>  
-  </header>
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+}
 
-<!-- main -->
-  <main>
-    <section class="cars">
-        <ul class="c-wrapper">
-          <li class="c-slide1">
-            <img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저">
-            <div class="contents">
-              <h2>TRAIL BLAZZER </h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-          <li class="c-slide2">
-            <img src="./imges/trax_crossover.jpg" alt="트렉스 크로스오버">
-            <div class="contents">
-              <h2>TRAX CROSSOVER</h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-          <li class="c-slide3">
-            <img src="./imges/equinox.jpg" alt="이퀴녹스">
-            <div class="contents">
-              <h2>EQUINOX </h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-          <li class="c-slide4">
-            <img src="./imges/tahoe.jpg" alt="타호">
-            <div class="contents">
-              <h2>TAHOE </h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-          <li class="c-slide5">
-            <img src="./imges/traverse.jpg" alt="트레비스">
-            <div class="contents">
-              <h2>TRAVERSE </h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-          <li class="c-slide6">
-            <img src="./imges/colorado-01.jpg" alt="콜로라도">
-            <div class="contents">
-              <h2>COLORADO </h2>
-              <a href="#">자세히 보기</a>
-            </div>
-          </li>
-        </ul>
-        <!-- 좌, 우버튼 -->
-        <a href="#" id="prev" class="controls"><i class="fas fa-chevron-left"></i></a>
-        <a href="#" id="next" class="controls"><i class="fas fa-chevron-right"></i></a>
-        <!-- 콘트롤 버튼 -->
-        <p class="pager"></p>
-    </section>
+header{
+  width: 100%;
+  /* position: fixed; */
+  background: #ebebeb;
+  z-index: 1;
+  border-bottom: 1px solid #ebebeb;
+  left: 0;
+  right: 0;
+  top: 0;
+}
 
-    <section class="Convenience">
-        <div class="container">
-          <ul class="menu">
-            <li class="menu-img">
-              <a href="#" title="배너1">
-                <img src="./imges/testdrive-apply--removebg-preview.png" alt="시승신청">
-                <h3>시승 신청</h3>
-              </a>
-            </li>
-            <li class="menu-img">
-              <a href="#" title="배너1">
-                <img src="./imges/car-made-removebg-preview.png" alt="내 차 만들기">
-                <h3>내 차 만들기</h3>
-              </a>
-            </li>
-            <li class="menu-img">
-              <a href="#" title="배너1">
-                <img src="./imges/price-removebg-preview.png" alt="카탈로그/가격표">
-                <h3>카탈로그/가격표</h3>
-              </a>
-            </li>
-            <li class="menu-img">
-              <a href="#" title="배너1">
-                <img src="./imges/event-removebg-preview.png" alt="이벤트">
-                <h3>이벤트</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-    </section>
-
-    <section class="best-seller">
-      <h2>BEST Seller</h2>
-      <div class="best">
-        <div class="slide-wrapper">
-          <div class="slide">
-            <span class="rank">1위</span>
-            <h3 class="top3_title">TREX CROSSOVER</h3>
-            <img src="./imges/TRAX-CROSSOVER-SIDE-removebg-preview.png" alt="트렉스 크로스오버 옆면">
-            <h4>E-Turbo PRIME 1.2 LS Plus A/T</h4>
-            <h5>￦ 21,880,000 ~</h5>
-            <button class="grow_box">자세히 보기</button>
-            <button class="grow_box">견적내기</button>
-            <!-- <a href="">자세히 보기</a>
-            <a href="">견적내기</a> -->
-          </div>
-          <div class="slide">
-            <span class="rank">2위</span>
-            <h3 class="top3_title">TRAIL BLAZER</h3>
-            <img src="./imges/TRAIL-BLAZER-SIDE-removebg-preview.png" alt="트레일블레이저 옆면">
-            <h4>E-Turbo 1.35 가솔린 LT CVT</h4>
-            <h5>￦ 27,110,000 ~</h5>
-            <a href="">자세히 보기</a>
-            <a href="">견적내기</a>
-          </div>
-          <div class="slide">
-            <span class="rank">3위</span>
-            <h3 class="top3_title">TRAVERSE</h3>
-            <img src="./imges/TRAVERSE-SIDE-removebg-preview.png" alt="트레비스 옆면">
-            <h4>3.6 가솔린 LT Leather Premium A/T</h4>
-            <h5>￦ 56,600,000 ~</h5>
-            <a href="">자세히 보기</a>
-            <a href="">견적내기</a>
-          </div>
-
-        </div>
-        <!-- 콘트롤 버튼 -->
-        <p class="pager"></p>
-        <!-- 좌, 우버튼 -->
-        <a href="#" id="prev" class="controls"><i class="fas fa-chevron-left"></i></a>
-        <a href="#" id="next" class="controls"><i class="fas fa-chevron-right"></i></a>
-      </div>
-    </section>
-
-    <section class="model">
-      <div class="container">
-        <div class="tab_menu">
-          <h2>Model Overview</h2>
-          <ul>
-            <li>
-              <a href="#suv">
-                <img src="" alt="#">
-                <h3>SUV</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#cuv">
-                <img src="" alt="#">
-                <h3>CUV</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#truck">
-                <img src="" alt="#">
-                <h3>TRUCK</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="tab_content">
-          <ul id="suv">
-            <li>
-              <img src="./imges/equinox_overview-removebg-preview.png" alt="EQUINOX">
-              <h3>EQUINOX</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-            <li>
-              <img src="./imges/trailblazer_overview-removebg-preview.png" alt="TRAIL BLAZER">
-              <h3>TRAIL BLAZER</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-            <li>
-              <img src="./imges/traverse_overview-removebg-preview.png" alt="TRAVERSE">
-              <h3>TRAVERSE</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-            <li>
-              <img src="./imges/tahoe_overview-removebg-preview.png" alt="TAHOE">
-              <h3>TAHOE</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-          </ul>
+header .gnb {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  align-items: center;
+  position: relative;
+}
 
 
-          <ul id="cuv">
-            <li>
-              <img src="./imges/traxcrossover_overview-removebg-preview.png" alt="TRAX CROSSOVER">
-              <h3>TRAX CROSSOVER</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-          </ul>
-          <ul id="truck">
-            <li>
-              <img src="./imges/colorado_overview2-removebg-preview.png" alt="COLORADO">
-              <h3>COLORADO</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+header ul{
+  display: flex;
+  text-align: center;
+  text-indent: 8px;
+  line-height: 53px;
+}
+
+.depth{
+  display: none;
+  /* display: flex;
+  height: 100%; */
+}
+
+.left-menu{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined{
+  vertical-align:sub
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img{
+  width: 100px;
+  align-items: center;
+  display: flex;
+  top: 0;
+  padding: 0 3px;
+}
+
+.right-menu{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* 메인 슬라이더 서식 */
+.cars {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 950px;
+  transition: transform 0.5s ease-in-out;
+}
+.c-wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  transition: left .3s ease-in;
+  left: 0;
+}
+.c-wrapper>li>img{
+  width: 100%;
+  height: 950px;
+  object-fit: cover;
+}
+.c-wrapper>li{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+.c-wrapper>li .contents{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  display: flex;
+}
+
+.c-wrapper>li .contents>*{
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s 0.4s ease-in-out;
+}
+
+.c-wrapper>li.active .contents>*{
+  color: #fff;
+  opacity: 1;
+}
+.c-wrapper>li .contents a {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-size: 50px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.c-wrapper>li.contents h2{
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  font-size: 50px;
+}
 
 
-    <!-- <section id="event">
-      <h2>이벤트</h2>
-      <br>
-      <article class="event_support">
-        <h3>
-          "면세구입자"
-          <br>
-          "지원 프로그램"
-        </h3>
-        <p class="support_p"> 면세 구입자 지원<br></p>
-        <hr>
-        <ul>
-          <li>이벤트 기간:2024-02-01 ~ 2024-02-29</li>
-        </ul>
-      </article>
-      <article class="event_program">
-        <h3>
-          "쉐보레"
-          <br>
-          "익스체인지 프로그램"
-        </h3>
-        <p class="program_p"> 쉐보레 익스체인지 프로그램<br></p>
-        <hr>
-        <ul>
-          <li>이벤트 기간:2024-02-01 ~ 2024-02-29</li>
-        </ul>
-      </article>
-      <article class="event_account">
-        <h3>
-          "한국지엠"
-          <br>
-          "통합 계정 전환"
-        </h3>
-        <p class="program_p"> 통합 계정 전환<br></p>
-        <hr>
-      </article>
-    </section>-->
-  </main> 
+.cars .controls {
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  z-index: 999999;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: all .3s ease-in;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 5rem;
+  font-size: 20px;
+  color: #444;
+}
 
-  <section class="care">
-    <div class="complete">
-      <div class="c-logo">
-        <img src="./imges/complete-care-logo-removebg-preview.png" alt="컴플리트 케어">
-      </div>
-      <div class="c-text">
-        <h2>쉐보레 컴플리트 케어 (Chevrolet Complete Care) 프로그램</h2>
-      </div>
-      <div class="c-text2">
-        <h3>쉐보레 컴플리트 케어와 함께 즐겁고 안전한 드라이빙을 즐기세요.</h3>
-      </div>
-      <div class="c-button">
-        <a href="#care">자세히 보기</a>
-      </div>
-    </div>
-  </section>
+#prev {
+  left: 20px;
+}
 
-<!-- footer -->
-<footer>
-  <div class="footer_menu">
-      <div class="container">
-      <h2>
-        <a href="index.html" title="하단로고">
-          <img src="./imges/chevrolet-logo-v2-removebg-preview.png" alt="하단로고">
-        </a>
-      </h2>
-      <nav class="f_lnb">
-        <ul>
-          <li><a href="#" title="차량">차량</a></li>
-          <li><a href="#" title="온라인 구매">온라인 구매</a></li>
-          <li><a href="#" title="정비 서비스">정비 서비스</a></li>
-          <li><a href="#" title="쉐보레 NOW">쉐보레 NOW</a></li>
-        </ul>
-        <ul>
-          <li><a href="#" title="이용약관">이용약관</a></li>
-          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
-          <li><a href="#" title="사이트맵">사이트맵</a></li>
-          <li><a href="#" title="GM KOREA">GM KOREA</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="copyright">
-      <address>
-        <dl>
-          <dt>사업자 :</dt>
-          <dd>한국지엠주식회사</dd>
-          <dt>대표 : </dt>
-          <dd>헥터 비자레알</dd>
-          <dt>사업자등록번호 : </dt>
-          <dd>122-81-74534</dd>
-          <dt>주소 : </dt>
-          <dd>21334 인천광역시 부평구 부평대로 233</dd>
-          <dt>통신판매업신고 : </dt>
-          <dd>2016-인천부평-0902</dd>
-        </dl>
-        <p>&copy; GM KOREA.ALL RIGHTS RESERVED</p>
-      </address>
-      <h2>FIND NEW ROAD</h2>
-    </div>
-  </div>
-</footer>
+#next {
+  right: 20px;
+}
+
+#prev.disabled,
+#next.disabled {
+  display: none;
+}
+.cars .controls:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+}
+
+.pager a {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ccc;
+  text-indent: -9999em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pager a.active {
+  background: #000;
+}
+
+.cars {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 900px;
+  transition: transform 0.5s ease-in-out;
+}
+.c-wrapper{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  transition: left .3s ease-in;
+  left: 0;
+}
+.c-wrapper>li{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+.c-wrapper>li .contents{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  gap: 20px;
+}
+
+.c-wrapper>li .contents>*{
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s 0.4s ease-in-out;
+}
+
+.c-wrapper>li.active .contents>*{
+  color: #fff;
+  opacity: 1;
+}
+.c-wrapper>li .contents h2{
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  font-size: 48px;
+}
+.c-wrapper>li .contents a {
+  padding: 15px 15px;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cars .controls {
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  z-index: 999999;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: all .3s ease-in;
+  background: rgba(255, 255, 255, .5);
+  text-align: center;
+  line-height: 5rem;
+  font-size: 20px;
+  color: #444;
+}
+
+#prev {
+  left: 20px;
+}
+
+#next {
+  right: 20px;
+}
+
+#prev.disabled,
+#next.disabled {
+  display: none;
+}
+.cars .controls:hover {
+  background: rgba(255, 255, 255, 1);
+}
+.pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+}
+
+.pager a {
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ccc;
+  text-indent: -9999em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.pager a.active {
+  background: #000;
+}
+button.grow_ellipse:after{
+  border-radius: 50%;
+  transform:scale(0);
+}
+button.grow_ellipse:hover:after{
+  transform:scale(1.5);
+}
+
+/* Convenience 서식 */
+.Convenience{
+  padding-top: 81px;
+  padding-bottom: 81px;
+}
+.container{
+  width: 1420px;
+  margin: 0 auto;
+}
+.container .menu{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.container .menu li{
+  text-align: center;
+}
+.container .menu li a{
+  font-size: 22px;
+  font-weight: medium;
+}
+.container .menu li a img{
+  margin-bottom: 40px;
+}
+
+/* best-seller */
+.best-seller {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.best {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  transition: left .3s ease-in;
+  left: 0;
+}
+
+.slide-wrapper>img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.slide-wrapper{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+
+.slide-wrapper .slide{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  display: flex;
+}
+
+.slide-wrapper .slide>*{
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s 0.4s ease-in-out;
+}
+
+.slide-wrapper.active .slide>*{
+  color: #fff;
+  opacity: 1;
+}
+
+button {
+  font-size: 2em;
+  background: #fff;
+  color: #000;
+  border: 3px solid #cd9834;
+  padding: 7px 2px;
+  margin: 16px;
+  position: relative;
+  overflow: hidden; 
+  z-index:1;
+}
+button:after{
+  content:'';
+  position: absolute;
+  background: #cd9834;
+  padding:5px;
+  z-index:-1;
+  left: -1px; 
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  transition:0.3s;
+}
+button:hover{
+  color: #000;
+}
+button.grow_box:after{
+  transform:scale(0);
+}
+button.grow_box:hover:after{
+  /* transform:scale(1); */
+  transform:none;
+}
+/* model overview */
 
 
 
-  <script src="./js/script.js"></script>
-</body>
-</html>
+/* completecare */
+.care{
+  padding-top: 162px;
+  padding-bottom: 162px;
+}
+.complete{
+  width: 1420px;
+  margin: 0 auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.c-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 텍스트를 중앙 정렬합니다. */
+}
+
+.c-text h2,
+.c-text2 h3 {
+  margin: 0; /* 기본 마진을 제거합니다. */
+}
+
+
+
+
+/*footer*/
+footer{
+  height: 300px;
+  background: #ebebeb;
+  color: #000;
+
+}
+
