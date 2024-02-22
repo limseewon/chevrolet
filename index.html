@@ -48,44 +48,44 @@
 
 <!-- main -->
   <main>
-    <section class="cars">
-        <ul class="c-wrapper">
-          <li class="c-slide1">
+    <section class="cars slidewrapper">
+        <ul class="slidecontainer">
+          <li class="slide">
             <img src="./imges/blazzer_main_contents.jpg" alt="트레일블레이저">
             <div class="contents">
               <h2>TRAIL BLAZZER </h2>
               <a href="#">자세히 보기</a>
             </div>
           </li>
-          <li class="c-slide2">
+          <li class="slide">
             <img src="./imges/trax_crossover.jpg" alt="트렉스 크로스오버">
             <div class="contents">
               <h2>TRAX CROSSOVER</h2>
               <a href="#">자세히 보기</a>
             </div>
           </li>
-          <li class="c-slide3">
+          <li class="slide">
             <img src="./imges/equinox.jpg" alt="이퀴녹스">
             <div class="contents">
               <h2>EQUINOX </h2>
               <a href="#">자세히 보기</a>
             </div>
           </li>
-          <li class="c-slide4">
+          <li class="slide">
             <img src="./imges/tahoe.jpg" alt="타호">
             <div class="contents">
               <h2>TAHOE </h2>
               <a href="#">자세히 보기</a>
             </div>
           </li>
-          <li class="c-slide5">
+          <li class="slide">
             <img src="./imges/traverse.jpg" alt="트레비스">
             <div class="contents">
               <h2>TRAVERSE </h2>
               <a href="#">자세히 보기</a>
             </div>
           </li>
-          <li class="c-slide6">
+          <li class="slide">
             <img src="./imges/colorado-01.jpg" alt="콜로라도">
             <div class="contents">
               <h2>COLORADO </h2>
@@ -94,8 +94,8 @@
           </li>
         </ul>
         <!-- 좌, 우버튼 -->
-        <a href="#" id="prev" class="controls"><i class="fas fa-chevron-left"></i></a>
-        <a href="#" id="next" class="controls"><i class="fas fa-chevron-right"></i></a>
+        <a href="#" class="prev controls"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="next controls"><i class="fas fa-chevron-right"></i></a>
         <!-- 콘트롤 버튼 -->
         <p class="pager"></p>
     </section>
@@ -132,17 +132,20 @@
     </section>
 
     <section class="best-seller">
-      <h2>BEST Seller</h2>
-      <div class="best">
-        <div class="slide-wrapper">
+      <div class="best slidewrapper">
+        <h2>BEST Seller</h2>
+        <div class="slidecontainer">
           <div class="slide">
             <span class="rank">1위</span>
             <h3 class="top3_title">TREX CROSSOVER</h3>
             <img src="./imges/TRAX-CROSSOVER-SIDE-removebg-preview.png" alt="트렉스 크로스오버 옆면">
-            <h4>E-Turbo PRIME 1.2 LS Plus A/T</h4>
-            <h5>￦ 21,880,000 ~</h5>
-            <button class="grow_box">자세히 보기</button>
-            <button class="grow_box">견적내기</button>
+            <ul class='detail'>
+              <li>차량 종류<br>E-Turbo PRIME 1.2 LS Plus A/T</li>
+              <li><em class="price">￦ 21,880,000</em>원 ~</li>
+            </ul>
+            <!-- <h4>E-Turbo PRIME 1.2 LS Plus A/T</h4>
+            <h5>￦ 21,880,000 ~</h5> -->
+              <button class="grow_box">견적내기</button>
             <!-- <a href="">자세히 보기</a>
             <a href="">견적내기</a> -->
           </div>
@@ -150,27 +153,28 @@
             <span class="rank">2위</span>
             <h3 class="top3_title">TRAIL BLAZER</h3>
             <img src="./imges/TRAIL-BLAZER-SIDE-removebg-preview.png" alt="트레일블레이저 옆면">
-            <h4>E-Turbo 1.35 가솔린 LT CVT</h4>
-            <h5>￦ 27,110,000 ~</h5>
-            <button class="grow_box">자세히 보기</button>
-            <button class="grow_box">견적내기</button>
+            <ul class='detail'>
+              <li>차량 종류<br> E-Turbo 1.35 가솔린 LT CVT</li>
+              <li><em class="price">￦ 27,110,000</em>원 ~</li>
+            </ul>
+              <button class="grow_box">견적내기</button>
           </div>
           <div class="slide">
             <span class="rank">3위</span>
             <h3 class="top3_title">TRAVERSE</h3>
             <img src="./imges/TRAVERSE-SIDE-removebg-preview.png" alt="트레비스 옆면">
-            <h4>3.6 가솔린 LT Leather Premium A/T</h4>
-            <h5>￦ 56,600,000 ~</h5>
-            <button class="grow_box">자세히 보기</button>
-            <button class="grow_box">견적내기</button>
+            <ul class='detail'>
+              <li>차량 종류<br>3.6 가솔린 LT Leather Premium A/T</li>
+              <li><em class="price">￦ 56,600,000</em>원 ~</li>
+            </ul>
+              <button class="grow_box">견적내기</button>
           </div>
-
         </div>
-        <!-- 콘트롤 버튼 -->
-        <p class="pager"></p>
         <!-- 좌, 우버튼 -->
-        <a href="#" id="prev" class="controls"><i class="fas fa-chevron-left"></i></a>
-        <a href="#" id="next" class="controls"><i class="fas fa-chevron-right"></i></a>
+        <a href="#" class="controls prev"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="controls next"><i class="fas fa-chevron-right"></i></a>
+        <!-- 콘트롤 버튼 -->
+        <p class="pager"></p>        
       </div>
     </section>
 
@@ -356,8 +360,9 @@
           <dd>2016-인천부평-0902</dd>
         </dl>
         <p>&copy; GM KOREA.ALL RIGHTS RESERVED</p>
+        <h2>FIND NEW ROAD</h2>
       </address>
-      <h2>FIND NEW ROAD</h2>
+      
     </div>
   </div>
 </footer>
