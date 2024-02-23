@@ -410,6 +410,7 @@ button.grow_box:hover:after{
 	color: #fff;
 	/* background:#000; */
 }
+
 .model .container{
   position: relative;
   display: flex;
