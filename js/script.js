@@ -97,3 +97,38 @@ function myslide(target) {
   });
 
 }
+
+
+// 탭 메뉴
+const tabMenu = document.querySelectorAll('.tab-menu a'); 
+const tabContent = document.querySelectorAll('#tab-content > div'); 
+
+const highlight = document.querySelector('.highlight');
+
+tabMenu.forEach((item, index)=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let newLeft = item.offsetLeft;
+    let newWidth = item.offsetWidth;
+    console.log(newLeft,newWidth);
+
+    highlight.style.left = `${newLeft}px`;
+    highlight.style.width = `${newWidth}px`;
+
+    for(let m of tabMenu){
+      m.classList.remove('active');
+    }
+    e.target.classList.add('active');
+
+    for(let tc of tabContent){
+      tc.classList.remove('active');
+    }
+    tabContent[index].classList.add('active');
+  })
+})
+
+/*
+요소의 너비 offsetWidth
+요소의 위치 offsetLeft
+  가까운 부모중에 포지션값이 기본값이 아닌 요소를 기준으로.
+*/
