@@ -101,7 +101,7 @@ function myslide(target) {
 
 // 탭 메뉴
 const tabMenu = document.querySelectorAll('.tab-menu a'); 
-const tabContent = document.querySelectorAll('#tab-content > div'); 
+const tabContent = document.querySelectorAll('.tab-content > ul'); 
 
 const highlight = document.querySelector('.highlight');
 
