@@ -1,3 +1,31 @@
+//네비게이션
+let gnb = document.querySelector('.left-menu li:first-child');
+let gnbBg = document.querySelector('.left-menu-bg');
+
+  gnb.addEventListener('mouseenter',()=>{
+    gnbBg.style.opacity = '1';
+    gnbBg.style.visibility = 'visible';
+  })
+  gnb.addEventListener('mouseleave',()=>{
+    gnbBg.style.opacity = '0';
+    gnbBg.style.visibility = 'hidden';
+  })
+
+
+// for(let li of gnb){
+//   li.addEventListener('mouseenter',()=>{
+//     gnbBg.style.opacity = '1';
+//     gnbBg.style.visibility = 'visible';
+//   })
+
+//   li.addEventListener('mouseleave',()=>{
+//     gnbBg.style.opacity = '0';
+//     gnbBg.style.visibility = 'hidden';
+//   })
+// }
+
+
+
 const slideWrappers = document.querySelectorAll('.slidewrapper');
 
 for(let slidewrapper of slideWrappers){
