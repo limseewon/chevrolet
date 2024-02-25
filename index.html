@@ -16,25 +16,27 @@
   <header>
     <div  class="gnb container">
       <ul class="left-menu">
-        <li><a href="#" title="차량">차량<span class="material-symbols-outlined">arrow_drop_down</span></a>
-          <ul class="depth">
-            <li><a href="#"><img src="./imges/colorado_angularfront-removebg-preview.png" alt="콜로라도 뎁스">COLORADO</a></li>
-            <li><a href="#"> <img src="./imges/equinox_angularfront-removebg-preview.png" alt="이퀴녹스 뎁스">EQUINOX</a></li>
-            <li><a href="#"><img src="./imges/tahoe_angularfront-removebg-preview.png" alt="타호 뎁스">TAHOE</a></li>
-            <li><a href="#"><img src="./imges/blazer_angularfront-removebg-preview.png" alt="트레일블레이저 뎁스">TRAIL-BLAZER</a></li>
-            <li><a href="#"><img src="./imges/traverse_angularfront-removebg-preview.png" alt="트레비스 뎁스">TRAVERSE</a></li>
-            <li><a href="#"><img src="./imges/trax_angularfront-removebg-preview.png" alt="트렉스 크로스오버 뎁스">TRAX-CROSSOVER</a></li>
-          </ul>
-        </li>
-        <li><a href="#" title="온라인 구매">온라인 구매<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-          <ul class="depth">
+          <a href="#" title="차량">차량</a>
+          <!-- <span class="material-symbols-outlined">arrow_drop_down</span> -->
+          <div class="sub-area">
+            <ul class="depth">
+              <li><a href="#"><img src="./imges/colorado_angularfront-removebg-preview.png" alt="콜로라도 뎁스">COLORADO</a></li>
+              <li><a href="#"> <img src="./imges/equinox_angularfront-removebg-preview.png" alt="이퀴녹스 뎁스">EQUINOX</a></li>
+              <li><a href="#"><img src="./imges/tahoe_angularfront-removebg-preview.png" alt="타호 뎁스">TAHOE</a></li>
+              <li><a href="#"><img src="./imges/blazer_angularfront-removebg-preview.png" alt="트레일블레이저 뎁스">TRAIL-BLAZER</a></li>
+              <li><a href="#"><img src="./imges/traverse_angularfront-removebg-preview.png" alt="트레비스 뎁스">TRAVERSE</a></li>
+              <li><a href="#"><img src="./imges/trax_angularfront-removebg-preview.png" alt="트렉스 크로스오버 뎁스">TRAX-CROSSOVER</a></li>
+            </ul>
+          </div>
+        <li><a href="#" title="온라인 구매">온라인 구매</li>
+          <!-- <ul class="depth">
             <li><a href="#">온라인샵</a></li>
             <li><a href="#">가격 및 구매 안내</a></li>
             <li><a href="#">전시장 안내</a></li>
             <li><a href="#">온라인 신청</a></li>
-          </ul>
-        <li><a href="#" title="정비 서비스">정비 서비스<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
-        <li><a href="#" title="쉐보레 NOW">쉐보레 NOW<span class="material-symbols-outlined">arrow_drop_down</span></a></li>
+          </ul> -->
+        <li><a href="#" title="정비 서비스">정비 서비스</li>
+        <li><a href="#" title="쉐보레 NOW">쉐보레 NOW</li>
       </ul>
       <h2 class="logo"><a href="#" title="쉐보레 로고 이미지"><img src="./imges/chevrolet-logo-v2-removebg-preview.png"  alt="Chevrolet 로고"></a>
       </h2>
@@ -181,6 +183,7 @@
     <section class="model">
       <div class="container">
         <h2>Model Overview</h2>
+        <div class="model_tabs">
           <ul class="tab-menu">
             <li>
               <a href="#suv">SUV</a>
@@ -194,39 +197,29 @@
             </li>
           </ul>
           <span class="highlight"></span>
+          <!-- <hr> -->
         <div class="tab-content">
+          
           <ul id="suv" class="active">
             <li>
               <img src="./imges/equinox_overview-removebg-preview.png" alt="EQUINOX">
               <h3>EQUINOX</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
             <li>
               <img src="./imges/trailblazer_overview-removebg-preview.png" alt="TRAIL BLAZER">
               <h3>TRAIL BLAZER</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
             <li>
               <img src="./imges/traverse_overview-removebg-preview.png" alt="TRAVERSE">
               <h3>TRAVERSE</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
             <li>
               <img src="./imges/tahoe_overview-removebg-preview.png" alt="TAHOE">
               <h3>TAHOE</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
           </ul>
 
@@ -235,22 +228,17 @@
             <li>
               <img src="./imges/traxcrossover_overview-removebg-preview.png" alt="TRAX CROSSOVER">
               <h3>TRAX CROSSOVER</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
           </ul>
           <ul id="truck">
             <li>
               <img src="./imges/colorado_angularfront-removebg-preview.png" alt="COLORADO">
               <h3>COLORADO</h3>
-              <div class="hover_contents">
-                <img src="" alt="#">
-                <a href="">견적내기</a>
-              </div>
+              <button class="grow_box">견적내기</button>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </section>
@@ -356,7 +344,7 @@
 
 
 
-
+<a href="#" id="go-top" title="Back to Top"><i class="fas fa-arrow-up"></i></a>
   <script src="./js/script.js"></script>
 </body>
 </html>
