@@ -4,8 +4,6 @@ for(let slidewrapper of slideWrappers){
   myslide(slidewrapper);
 }
 
-
-
 function myslide(target) {
 
   let slideWrapper = target, //ul의 부모
@@ -127,8 +125,29 @@ tabMenu.forEach((item, index)=>{
   })
 })
 
-/*
-요소의 너비 offsetWidth
-요소의 위치 offsetLeft
-  가까운 부모중에 포지션값이 기본값이 아닌 요소를 기준으로.
-*/
+//go-top
+const btt = document.querySelector('#go-top');
+//btt.classList.add('active');
+
+window.addEventListener('scroll',()=>{
+  // let scrollAmt = window.pageYOffset;
+  let scrollAmt = window.scrollY;
+
+  if(scrollAmt > 100){
+    btt.classList.add('active');
+  }else{
+    btt.classList.remove('active');
+  }
+});
+
+btt.addEventListener('click',(e)=>{
+  e.preventDefault();
+  //window.scrollTo(0,0); 
+  window.scrollTo({
+    letf:0,
+    top:0,
+    behavior:'smooth'
+  }); 
+});
+
+
