@@ -109,7 +109,7 @@ header ul{
   position: absolute;
   left: 10%;
   top: 20%;
-  text-align: center;
+  text-align: left;
 }
 
 .cars.slidewrapper li .contents>*{
@@ -411,16 +411,20 @@ button.grow_box:hover:after{
   position: relative;
   display: flex;
   align-items: center;
+  height: 600px;
+  box-sizing: border-box;
 }
 .tab-content {
   display: flex;
   flex-direction: column; 
+  position: static;
 }
 
 .tab-content ul {
   display: flex;
   flex-direction: column; 
   padding: 20px;
+  position: static;
 }
 
 .tab-menu {
@@ -460,8 +464,10 @@ button.grow_box:hover:after{
   }
 
 .model .container img{
-  display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 
