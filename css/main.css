@@ -649,6 +649,7 @@ footer{
   color:#000;
   /* border-right:1px solid #000; */
   padding:0px 30px;
+  font-weight: bold;
 }
 .footer_menu hr{
   padding-top: 10px;
@@ -669,11 +670,15 @@ footer address dt,
 footer address dd{
   display:inline-block;
 }
+footer address dt{
+  font-weight: bold;
+}
 footer p{
   font-weight: 700;
   float: left;
 }
 .copyright address h2{
   font-size: 50px;
+  font-weight: bold;
   float: right;
 }
