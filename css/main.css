@@ -86,7 +86,6 @@ header ul{
 .sub-area .depth3{
   /* justify-content: space-between; */
   align-items: center;
-  font-size: 2px;
 }
 .sub-area .depth3 .grow_box{
   width: auto;
@@ -377,7 +376,7 @@ header ul{
   text-align: center;
   line-height: 5rem;
   font-size: 24px;
-  color: #444;
+  color: #000;
 }
 .best.slidewrapper .prev {
   left: 0;
