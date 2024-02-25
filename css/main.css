@@ -36,20 +36,44 @@ header ul{
   line-height: 53px;
 }
 
-.depth{
+
+.sub-area {
   display: none;
-  /* display: flex;
-  height: 100%; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
+
+.left-menu > li:hover .sub-area {
+  display: block;
+}
+
+.depth {
+  list-style: none;
+  padding: 0;
+}
+
+.depth li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.depth li img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .left-menu{
   font-size: 16px;
   display: flex;
   align-items: center;
+  gap: 15px;
+  justify-content: space-between;
 }
-.material-symbols-outlined{
-  vertical-align:sub
-}
+
 
 .logo {
   position: absolute;
@@ -409,32 +433,58 @@ button.grow_box:hover:after{
 }
 .model .container{
   position: relative;
-  display: flex;
-  align-items: center;
   height: 600px;
-  box-sizing: border-box;
+}
+.model_tabs{
+  display: flex;
+}
+.tab-content hr{
+  width: 50%;
 }
 .tab-content {
+  flex:2;
   display: flex;
   flex-direction: column; 
   position: static;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .tab-content ul {
   display: flex;
-  flex-direction: column; 
   padding: 20px;
   position: static;
+  gap:6% 20px;
+  flex-wrap:wrap;
 }
+.tab-content ul li {
+  width: 42%;
+}
+
+.tab-content .grow_box{
+  width: 150px;
+  height: 40px;
+}
+.tab-content li img,
+.tab-content li h3,
+.tab-content li button {
+  margin: 0;
+}
+.tab-content li:nth-child(2) img {
+  margin-top: 20px;
+}
+
 
 .tab-menu {
   display: flex;
   flex-direction: column; 
   gap: 20px;
+  flex:1;
+  border-right: 1px solid;
 }
 
 .tab-menu li {
-  margin-bottom: 10px; 
+  margin-bottom: 20px; 
 }
 
 .tab-menu li a {
@@ -455,6 +505,10 @@ button.grow_box:hover:after{
   #cuv.active,
   #truck.active {
     display: flex;
+  }
+  #truck li img {
+    width: 360px;
+    height: 202px;
   }
   #tab-content > li{
     display: none;
@@ -493,6 +547,26 @@ button.grow_box:hover:after{
   font-size:16px;
 }
 
+/* back to top */
+#go-top {    
+	width: 48px; 
+	height: 48px;   
+	position: fixed; 
+	bottom: 48px; 
+	right: 48px;
+	line-height:48px;
+	text-align:center; 	
+	background-color:#444;
+	color:#fff;
+	opacity:0;
+	/* visibility: hidden; */
+	pointer-events: none;
+	transition:opacity 0.5s;	
+}
+#go-top.active{
+	opacity: 1;
+	pointer-events: auto;
+}
 
 
 /*footer*/
