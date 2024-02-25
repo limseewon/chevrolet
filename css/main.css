@@ -10,9 +10,9 @@ body {
 
 header{
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   background: #ebebeb;
-  z-index: 1;
+  z-index: 999;
   border-bottom: 1px solid #ebebeb;
   left: 0;
   right: 0;
@@ -23,7 +23,7 @@ header .gnb {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 1400px;
+  width: 1420px;
   align-items: center;
   position: relative;
 }
@@ -38,33 +38,62 @@ header ul{
 
 
 .sub-area {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   z-index: 1;
+  transition: 0.3s;
+  height: auto;
 }
 
-.left-menu > li:hover .sub-area {
-  display: block;
-}
 
+.left-menu li:hover .sub-area{
+  opacity: 1;
+  visibility: visible;
+}
+.left-menu-bg{
+  width: 100%;
+  height: 276px;
+  background: #fff;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  border-bottom: 1px solid;
+}
 .depth {
+  /* width: 200px; */
   list-style: none;
   padding: 0;
 }
 
 .depth li {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
 }
 
 .depth li img {
-  max-width: 100%;
-  height: auto;
+  max-width: 200px;
+  height: 180px;
 }
-
+.depth2{
+  align-items: center;
+}
+.sub-area .depth3{
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: 2px;
+}
+.sub-area .depth3 .grow_box{
+  width: auto;
+}
+.depth4{
+  align-items: center;
+}
 
 .left-menu{
   font-size: 16px;
@@ -74,6 +103,15 @@ header ul{
   justify-content: space-between;
 }
 
+.left-menu > li{
+  flex-grow: 1;
+  transition: 0.5s;
+}
+
+.left-menu > li:hover{
+  background-color: #fff;
+  flex-grow: 1.5;
+}
 
 .logo {
   position: absolute;
@@ -427,16 +465,20 @@ button.grow_box:hover:after{
   margin: 0 auto;
 }
 .model .container h2{
+  position: absolute;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  top: 3%;
 }
 .model .container{
   position: relative;
-  height: 600px;
+  height: auto;
 }
 .model_tabs{
   display: flex;
+  padding-top: 80px;
+  justify-content: space-between;
 }
 .tab-content hr{
   width: 50%;
@@ -448,6 +490,7 @@ button.grow_box:hover:after{
   position: static;
   text-align: center;
   box-sizing: border-box;
+  
 }
 
 .tab-content ul {
@@ -459,6 +502,10 @@ button.grow_box:hover:after{
 }
 .tab-content ul li {
   width: 42%;
+  margin-bottom: 20px;
+}
+.tab-content ul li h3{
+  margin-bottom: 10px;
 }
 
 .tab-content .grow_box{
@@ -481,6 +528,8 @@ button.grow_box:hover:after{
   gap: 20px;
   flex:1;
   border-right: 1px solid;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .tab-menu li {
@@ -489,6 +538,7 @@ button.grow_box:hover:after{
 
 .tab-menu li a {
   padding: 10px 20px; 
+  /* border: 1px solid; */
 }
 .tab-menu li a.active{
     color: #fff;
@@ -507,8 +557,7 @@ button.grow_box:hover:after{
     display: flex;
   }
   #truck li img {
-    width: 360px;
-    height: 202px;
+    height: 200px;
   }
   #tab-content > li{
     display: none;
@@ -528,6 +577,7 @@ button.grow_box:hover:after{
 /* completecare */
 .care{
   width: 100%;
+  padding: 40px 0;
 }
 .care .container{
   margin-top: 81px;
@@ -573,34 +623,36 @@ button.grow_box:hover:after{
 footer{
   background: #ebebeb;
   width: 100%;
-  padding:40px 0px;
-  height:100px;
+  padding:20px 0px;
 }
 .footer_menu .container{
-  width: 1420px;
+  width: 100%;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
-footer h2{
+/* footer h2{
   float: left;
   width: 150px;
   height: 60px;
-}
+} */
 .f_lnb{
   display: flex;
   justify-content: space-between;
-  width: 1420px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  align-items: center;
 }
 .f_lnb ul{
   display:flex;
-  /* padding-top:15px; */
 }
 .f_lnb ul a{
   color:#000;
-  border-right:1px solid #000;
-  padding:0px 20px;
+  /* border-right:1px solid #000; */
+  padding:0px 30px;
 }
+.footer_menu hr{
+  padding-top: 10px;
+}
+
 
 footer address{
   /* padding-top:20px; */
@@ -612,13 +664,15 @@ footer address dl{
   border-bottom: #000;
   margin-bottom: 20px;
 }
-footer address dt{
-  display:inline-block;
-}
+footer address dt,
 footer address dd{
   display:inline-block;
 }
 footer p{
-  line-height: ;
   font-weight: 700;
+  float: left;
+}
+.copyright address h2{
+  font-size: 50px;
+  float: right;
 }
